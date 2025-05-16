@@ -586,55 +586,51 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="row">
-                    <div class="resume-widget">
-                        <div class="resume-item col-md-12 wow fadeInLeft" data-wow-delay=".4s">
-                            <div class="time">
-                                2024 - 2027
-                            </div>
+                    <!-- Sertifikat 1 -->
+                    <div class="col-md-6">
+                        <div class="resume-item wow fadeInLeft" data-wow-delay=".4s">
+                            <div class="time">2024 - 2027</div>
                             <h3 class="resume-title">Badan Nasional Sertifikasi Profesi (BNSP)</h3>
-                            <div class="institute">
-                                Junior Web Developer
-                            </div><br>
-                            <a href="#popup-sertifikat1" class="btn btn-outline-info popup-with-zoom-anim">Lihat Sertifikat</a>
+                            <div class="institute">Junior Web Developer</div><br>
+                            <button data-mfp-src="#popup-sertifikat1" class="btn btn-outline-info modal-popup">Lihat Sertifikat</button>
                         </div>
-
-                        <div class="resume-item col-md-12 wow fadeInLeft" data-wow-delay=".4s">
-                            <div class="time">
-                                2024 - 2027
-                            </div>
+                    </div>
+        
+                    <!-- Sertifikat 2 -->
+                    <div class="col-md-6">
+                        <div class="resume-item wow fadeInLeft" data-wow-delay=".5s">
+                            <div class="time">2024 - 2027</div>
                             <h3 class="resume-title">Badan Nasional Sertifikasi Profesi (BNSP)</h3>
-                            <div class="institute">
-                                Tenaga Operator Komputer
-                            </div><br>
-                            <a href="#popup-sertifikat2" class="btn btn-outline-info popup-with-zoom-anim">Lihat Sertifikat</a>
+                            <div class="institute">Tenaga Operator Komputer</div><br>
+                            <button data-mfp-src="#popup-sertifikat2" class="btn btn-outline-info modal-popup">Lihat Sertifikat</button>
                         </div>
                     </div>
                 </div>
             </div>
-
+        
             <!-- Popup Sertifikat 1 -->
-<div id="popup-sertifikat1" class="popup_content_area zoom-anim-dialog mfp-hide">
-    <div class="popup_modal_img">
-      <img src="assets/img/JUNIOR WEB PROGRAMMER.png" alt="Sertifikat Junior Web Developer">
-    </div>
-    <div class="popup_modal_content">
-      <h2 class="title">Junior Web Developer</h2>
-    </div>
-  </div>
-  
-  <!-- Popup Sertifikat 2 -->
-  <div id="popup-sertifikat2" class="popup_content_area zoom-anim-dialog mfp-hide">
-    <div class="popup_modal_img">
-      <img src="assets/img/TENAGA OPERATOR KOMPUTER.png" alt="Sertifikat Tenaga Operator Komputer">
-    </div>
-    <div class="popup_modal_content">
-      <h2 class="title">Tenaga Operator Komputer</h2>
-    </div>
-  </div>
-  
+            <div id="popup-sertifikat1" class="popup_content_area zoom-anim-dialog mfp-hide">
+                <div class="popup_modal_img">
+                    <img src="assets/img/JUNIOR WEB PROGRAMMER.png" alt="Sertifikat Junior Web Developer">
+                </div>
+                <div class="popup_modal_content">
+                    <h2 class="title">Junior Web Developer</h2>
+                </div>
+            </div>
+        
+            <!-- Popup Sertifikat 2 -->
+            <div id="popup-sertifikat2" class="popup_content_area zoom-anim-dialog mfp-hide">
+                <div class="popup_modal_img">
+                    <img src="assets/img/TENAGA OPERATOR KOMPUTER.png" alt="Sertifikat Tenaga Operator Komputer">
+                </div>
+                <div class="popup_modal_content">
+                    <h2 class="title">Tenaga Operator Komputer</h2>
+                </div>
+            </div>
         </section>
+        
         <!-- SERVICES SECTION END -->
 
          <!-- SERVICES START -->
@@ -860,5 +856,19 @@
 
     <script src="assets/js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.css" />
+    <script>
+        $(document).ready(function() {
+            $('.modal-popup').magnificPopup({
+                type: 'inline',
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'zoom-in'
+            });
+        });
+    </script>
+    
 </body>
 </html>
